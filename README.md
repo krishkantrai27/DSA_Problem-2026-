@@ -30,6 +30,8 @@ Daily DSA practice, tracked and versioned — one folder per solved problem, bac
 Over a year on LeetCode — 658 submissions, 307 active days, max streak of 178 days, contest rating 1,484 (Top 49.84%).
 
 ![LeetCode Profile — Activity Heatmap](screenshots/leetcode_profile.png)
+<img width="1461" height="789" alt="leetcode_profile" src="https://github.com/user-attachments/assets/56e06334-bc95-44aa-a95a-157865732161" />
+
 
 **Badges earned:**
 
@@ -44,6 +46,7 @@ Over a year on LeetCode — 658 submissions, 307 active days, max streak of 178 
 | Top SQL 50 | Study Plan Medal | 2025-11-14 |
 
 ![LeetCode Badge List](screenshots/leetcode_badges.png)
+<img width="692" height="693" alt="leetcode_badges" src="https://github.com/user-attachments/assets/a732d15a-f6b2-4300-af27-b77f5889d244" />
 
 ---
 

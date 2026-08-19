@@ -15,21 +15,6 @@ This repo tracks my LeetCode problem-solving journey — one folder per problem,
 
 ---
 
-## 📁 Structure
-
-Each problem lives in its own folder, named `<number>-<problem-slug>`:
-
-```
-DSA_Problem-2026/
-├── 17-letter-combinations-of-a-phone-number/
-├── 238-product-of-array-except-self/
-├── 39-combination-sum/
-├── 46-permutations/
-├── 3705-find-the-largest-almost-missing-integer/
-└── ...
-```
-
----
 
 ## 🛠️ Tech
 

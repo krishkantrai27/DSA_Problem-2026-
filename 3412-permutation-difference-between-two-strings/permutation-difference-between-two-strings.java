@@ -1,6 +1,7 @@
 class Solution {
     public int findPermutationDifference(String s, String t) {
         int ans = 0 ;
+        /*
         HashMap<Character,Integer> map = new HashMap<>() ;
         for(int i = 0 ; i < s.length() ; i++){
             map.put(s.charAt(i),i);
@@ -9,6 +10,12 @@ class Solution {
             int t_idx = i;
             int s_idx = map.get(t.charAt(i)) ;
             ans += Math.abs(t_idx - s_idx);
+        }
+        */
+        for(int i = 0 ; i <  s.length() ; i++){
+            char t_ = s.charAt(i);
+            int t_idx = t.indexOf(t_);
+            ans += Math.abs(t_idx - i);
         }
         return ans ;
     }

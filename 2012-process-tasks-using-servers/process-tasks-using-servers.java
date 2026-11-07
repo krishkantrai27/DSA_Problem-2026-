@@ -16,7 +16,9 @@ class Solution {
                 return Integer.compare(a[1], b[1]);
             }
         );
-
+        for (int i = 0; i < n; i++) {
+            available.offer(new int[]{servers[i], i});
+        }
         PriorityQueue<int[]> busy = new PriorityQueue<>(
             (a, b) -> {
                 if (a[0] != b[0])
@@ -27,9 +29,7 @@ class Solution {
             }
         );
 
-        for (int i = 0; i < n; i++) {
-            available.offer(new int[]{servers[i], i});
-        }
+        
 
         long time = 0;
 

@@ -2,26 +2,27 @@ class Solution(object):
     def minimumSumSubarray(self, nums, l, r):
         n = len(nums)
 
-        prefixSum = [0] * n
-
-        prefixSum[0] = nums[0]
-
-        for i in range(1, n):
-            prefixSum[i] = prefixSum[i - 1] + nums[i]
-
-        result = float('inf')
+        # Step 1: Create Prefix Sum Array
+        prefixSum = [0] * (n + 1)
 
         for i in range(n):
-            for length in range(l, r + 1):
+            prefixSum[i + 1] = prefixSum[i] + nums[i]
 
-                if i + length > n:
-                    break
+        # Step 2: Store minimum positive sum
+        result = float('inf')
 
-                j = i + length - 1
+        # Step 3: Generate all subarrays
+        for i in range(n):
 
-                total = prefixSum[j] - (prefixSum[i - 1] if i > 0 else 0)
+            for j in range(i + l, min(n, i + r) + 1):
 
-                if total > 0:
-                    result = min(result, total)
+                # Step 4: Calculate subarray sum
+                sum = prefixSum[j] - prefixSum[i]
 
-        return result if result != float('inf') else -1
+                # Step 5: Check positive sum
+                if sum > 0:
+                    result = min(result, sum)
+
+        # Step 6: Return answer
+        return -1 if result == float('inf') else result
+        
